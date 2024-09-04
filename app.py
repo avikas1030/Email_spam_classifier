@@ -6,15 +6,14 @@ import os
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# Set the NLTK data directory explicitly
+
 nltk_data_path = os.path.join(os.getcwd(), 'nltk_data')
 nltk.data.path.append(nltk_data_path)
 
-# Download necessary NLTK data
 nltk.download('punkt', download_dir=nltk_data_path)
 nltk.download('stopwords', download_dir=nltk_data_path)
 
-# Your existing code
+
 ps = PorterStemmer()
 
 
